@@ -6,16 +6,18 @@ plugins {
 }
 
 group = "rose.loki_face2wall"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
     mavenLocal()
-
-
 }
 repositories {
     maven("https://repo.purpurmc.org/snapshots")
+}
+tasks.withType <JavaCompile>
+{
+    options.encoding = "UTF-8"
 }
 
 dependencies {

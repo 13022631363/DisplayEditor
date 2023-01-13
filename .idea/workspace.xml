@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ceb7df1-6eb3-4751-b947-4b3d451de3ee" name="变更" comment="项目初始化完成" />
+    <list default="true" id="8ceb7df1-6eb3-4751-b947-4b3d451de3ee" name="变更" comment="项目初始化完成">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DisplayEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DisplayEditorPlugin.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,12 +61,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="4573a2f6-849f-42d0-9b5e-b0e5ab58164d" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,7 +88,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TODO_SCOPE": "所有位置",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/ide/ide/mc/hud编辑器/DisplayEditor",
+    "last_opened_file_path": "E:/ide/ide/mc/任务插件/QuestScrolls",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,18 +96,31 @@
     "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="common" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ide\ide\mc\hud编辑器\DisplayEditor\src\libs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\ide\ide\mc\hud编辑器\DisplayEditor\src" />
-      <recent name="E:\ide\ide\mc\hud编辑器\DisplayEditor\.idea\modules" />
       <recent name="E:\ide\ide\mc\hud编辑器\DisplayEditor" />
+      <recent name="E:\ide\ide\mc\hud编辑器\DisplayEditor\.idea\modules" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="DisplayEditor.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="DisplayEditor" />
       <method v="2">
@@ -111,6 +134,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -123,6 +151,7 @@
       <workItem from="1673326164159" duration="3197000" />
       <workItem from="1673334763881" duration="653000" />
       <workItem from="1673337850900" duration="719000" />
+      <workItem from="1673338580256" duration="19016000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化完成">
       <created>1673335266019</created>
@@ -131,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673335266019</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="项目初始化完成">
+      <created>1673338734665</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673338734665</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
