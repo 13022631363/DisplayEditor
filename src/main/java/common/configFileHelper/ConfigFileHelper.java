@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * @Author loki
- * @Date 2023/1/13 14:32
+ * @Date  2023/1/13 14:32
  */
 public interface ConfigFileHelper
 {
@@ -41,7 +41,7 @@ public interface ConfigFileHelper
     /**
      * 获取配置文件根目录
      */
-    void getBaseConfigFolder ();
+    File getBaseConfigFolder ();
 
 
     /**
