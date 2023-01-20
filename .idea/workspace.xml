@@ -4,11 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ceb7df1-6eb3-4751-b947-4b3d451de3ee" name="变更" comment="项目初始化完成">
+    <list default="true" id="8ceb7df1-6eb3-4751-b947-4b3d451de3ee" name="变更" comment="添加了部分接口(简陋)">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/ST_4_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_1_complete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_1_complete__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_1_complete__3_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_7_1_complete__4_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/libs/antlr-4.7.1-complete.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Implement_common/configFileHelperImpl/DefaultConfigFileHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/configContainerManager/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DisplayEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DisplayEditorPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DisplayEditorPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Implement_common/DisplayEditorPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/configContainerManager/ConfigContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/configContainerManager/ConfigContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/configContainerManager/ConfigContainerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/configContainerManager/ConfigContainerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/configFileHelper/ConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/configFileHelper/ConfigFileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/configFileHelper/SimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/configFileHelper/SimpleConfigFileReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +66,6 @@
                 <item name="DisplayEditor" type="f1a62948:ProjectNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
                 <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="DisplayEditor" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.purpurmc.purpur:purpur-api:1.19.2-R0.1-SNAPSHOT" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -88,15 +104,16 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TODO_SCOPE": "所有位置",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/ide/ide/mc/任务插件/QuestScrolls",
+    "last_opened_file_path": "E:/ide/ide/mc/hud编辑器/DisplayEditor/src/libs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "SDK",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -108,12 +125,27 @@
       <recent name="E:\ide\ide\mc\hud编辑器\DisplayEditor\src\libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ide\ide\mc\hud编辑器\DisplayEditor\src\testlibs" />
+      <recent name="E:\ide\ide\mc\hud编辑器\DisplayEditor\src\libs" />
       <recent name="E:\ide\ide\mc\hud编辑器\DisplayEditor\src" />
       <recent name="E:\ide\ide\mc\hud编辑器\DisplayEditor" />
       <recent name="E:\ide\ide\mc\hud编辑器\DisplayEditor\.idea\modules" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.Implement_common.Test">
+    <configuration name="Implement_common.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Implement_common.Test" />
+      <module name="DisplayEditor.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Implement_common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="DisplayEditor.main" />
@@ -136,6 +168,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Implement_common.Test" />
         <item itemvalue="应用程序.Test" />
       </list>
     </recent_temporary>
@@ -151,7 +184,9 @@
       <workItem from="1673326164159" duration="3197000" />
       <workItem from="1673334763881" duration="653000" />
       <workItem from="1673337850900" duration="719000" />
-      <workItem from="1673338580256" duration="19016000" />
+      <workItem from="1673338580256" duration="23731000" />
+      <workItem from="1674049888232" duration="4256000" />
+      <workItem from="1674109030799" duration="10454000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化完成">
       <created>1673335266019</created>
@@ -167,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673338734665</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加了部分接口(简陋)">
+      <created>1673622007142</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673622007142</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +218,11 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="59cf7f7b-8949-4dfc-9ef7-8e7f70d355b1">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -195,10 +242,31 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="59cf7f7b-8949-4dfc-9ef7-8e7f70d355b1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目初始化完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目初始化完成" />
+    <MESSAGE value="添加了部分接口(简陋)" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了部分接口(简陋)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

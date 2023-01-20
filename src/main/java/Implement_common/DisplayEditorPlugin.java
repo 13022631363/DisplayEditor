@@ -1,8 +1,9 @@
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
+package Implement_common;
+
+
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
+
 
 /**
  * @Author loki
@@ -10,15 +11,20 @@ import java.io.File;
  */
 public class DisplayEditorPlugin extends JavaPlugin
 {
+    private static JavaPlugin INSTANCE;
 
     @Override
     public void onEnable ()
     {
-
+        INSTANCE = this;
     }
     @Override
     public void onDisable ()
     {
 
+    }
+    public static JavaPlugin getINSTANCE()
+    {
+        return INSTANCE;
     }
 }
