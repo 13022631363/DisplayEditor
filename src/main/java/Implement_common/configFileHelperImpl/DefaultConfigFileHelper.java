@@ -62,28 +62,32 @@ public class DefaultConfigFileHelper implements ConfigFileHelper
     @Override
     public List<YamlConfiguration> getConfigFiles(File root)
     {
+        //创建临时容器
         List<YamlConfiguration> configFileList = new ArrayList<>();
-
+        //判断提供的路径文件是否是文件夹类型
         if (!root.isDirectory())
         {
-
+            //如果不是就结束并返回空
             return null;
         }
-
+        //如果是文件夹就获取它包下所有的文件
         File[] configFileArray = root.listFiles();
-
+        //遍历
         for (File aConfigFile : configFileArray)
         {
+            //递归将所有yml文件返回
             List<YamlConfiguration> returnConfigFileList =
                     getConfigFiles(new File(root, aConfigFile.getName ()));
-
+            //如果返回不为空
+            //代表是文件夹或者存在yml文件
             if (returnConfigFileList != null)
             {
+                //就合并
                 configFileList.addAll (returnConfigFileList);
             }
 
-
-            if (aConfigFile.getName().contains (".yml"))
+            //这个是文件并且是yml文件
+            if (aConfigFile.getName().contains (".yml")) //就存入临时容器中
                 configFileList.add (YamlConfiguration.loadConfiguration(aConfigFile));
         }
 

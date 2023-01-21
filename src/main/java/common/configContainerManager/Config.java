@@ -1,7 +1,8 @@
 package common.configContainerManager;
 
-import java.util.HashMap;
+
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -26,7 +27,7 @@ public interface Config
      * 获取设置信息
      * @return
      */
-    ConcurrentHashMap<String, HashMap<String, Object>> getSettings ();
+    List<Map<String, String>>  getSettings ();
 
     /**
      * 获取函数行为
