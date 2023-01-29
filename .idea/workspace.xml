@@ -4,30 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ceb7df1-6eb3-4751-b947-4b3d451de3ee" name="变更" comment="实现部分细节获取配置文件信息">
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+    <list default="true" id="8ceb7df1-6eb3-4751-b947-4b3d451de3ee" name="变更" comment="获取singleton和more节点配置功能  完成">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Implement_common/DefaultDisplayEditorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/interal/DefaultDisplayEditorApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Implement_common/DisplayEditorPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/DisplayEditorPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Implement_common/configContainerManagerImpl/DefaultConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configContainerManagerImpl/DefaultConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Implement_common/configContainerManagerImpl/DefaultConfigContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configContainerManagerImpl/DefaultConfigContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Implement_common/configContainerManagerImpl/DefaultConfigContainerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configContainerManagerImpl/DefaultConfigContainerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Implement_common/configFileHelperImpl/DefaultConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configFileHelperImpl/DefaultConfigFileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/DisplayEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/interal/DisplayEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/DisplayEditorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/interal/DisplayEditorApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/configContainerManager/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configContainerManager/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/configContainerManager/ConfigContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configContainerManager/ConfigContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/configContainerManager/ConfigContainerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configContainerManager/ConfigContainerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/configFileHelper/ConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/ConfigFileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/configFileHelper/SimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleConfigFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/configFileHelper/SimpleFileChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleFileChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/configFileHelper/SimpleFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleFileWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/configFileHelper/SimpleImageFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleImageFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/functionHelper/FunctionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/functionHelper/FunctionHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/hudManager/HudManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/hudManager/HudManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/logManager/LogManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/logManager/LogManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/papiHelper/PapiHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/papiHelper/PapiHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/DisplayEditorPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/DisplayEditorPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configContainerManagerImpl/DefaultConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configContainerManagerImpl/DefaultConfigContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfigContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configContainerManagerImpl/DefaultConfigContainerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfigContainerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configFileHelperImpl/DefaultConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultConfigFileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/interal/DefaultDisplayEditorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/interal/DefaultDisplayEditorApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configContainerManager/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configContainerManager/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configContainerManager/ConfigContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configContainerManager/ConfigContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configContainerManager/ConfigContainerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configContainerManager/ConfigContainerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/ConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/ConfigFileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleConfigFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleFileChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleFileChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleFileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleImageFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleImageFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/functionHelper/FunctionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/functionHelper/FunctionHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/hudManager/HudManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/hudManager/HudManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/interal/DisplayEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/interal/DisplayEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/interal/DisplayEditorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/interal/DisplayEditorApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/logManager/LogManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/logManager/LogManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/papiHelper/PapiHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/papiHelper/PapiHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +96,9 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="4573a2f6-849f-42d0-9b5e-b0e5ab58164d" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../gradle_repos/caches/modules-2/files-2.1/org.purpurmc.purpur/purpur-api/1.19.2-R0.1-SNAPSHOT/f3e58b506d198a61c48d3cc366377c37cb245a3c/purpur-api-1.19.2-R0.1-SNAPSHOT-sources.jar!/org/bukkit/event/EventPriority.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -93,26 +107,26 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TODO_SCOPE&quot;: &quot;所有位置&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/ide/ide/mc/hud编辑器/DisplayEditor/src/libs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDK&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TODO_SCOPE": "所有位置",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/ide/ide/mc/hud编辑器/DisplayEditor/src/main/java/cn/gionrose/parse",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDK",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="common" />
@@ -137,7 +151,7 @@
       <module name="DisplayEditor.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.gionrose.loki_face2wall.common.interal.*" />
+          <option name="PATTERN" value="cn.gionrose.displayEditor.common.interal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,6 +201,13 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="StandaloneScriptsStorage">
+    <option name="files">
+      <set>
+        <option value="$PROJECT_DIR$/build.gradle.kts" />
+      </set>
+    </option>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="8ceb7df1-6eb3-4751-b947-4b3d451de3ee" name="变更" comment="" />
@@ -200,7 +221,7 @@
       <workItem from="1673338580256" duration="23731000" />
       <workItem from="1674049888232" duration="4256000" />
       <workItem from="1674109030799" duration="26722000" />
-      <workItem from="1674566036652" duration="13890000" />
+      <workItem from="1674566036652" duration="56278000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化完成">
       <created>1673335266019</created>
@@ -237,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674313074179</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="获取singleton和more节点配置功能  完成">
+      <created>1674655367217</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674655367217</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,19 +324,20 @@
     <MESSAGE value="添加了部分接口(简陋)" />
     <MESSAGE value="实现了configHelper部分接口，获取所有配置文件" />
     <MESSAGE value="实现部分细节获取配置文件信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现部分细节获取配置文件信息" />
+    <MESSAGE value="获取singleton和more节点配置功能  完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取singleton和more节点配置功能  完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/test/Test.java</url>
-          <line>33</line>
+          <line>37</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/test/Test.java</url>
-          <line>40</line>
+          <line>45</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>

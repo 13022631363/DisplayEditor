@@ -13,6 +13,16 @@
           <option name="language" value="" />
           <option name="generateVisitor" value="true" />
         </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$USER_HOME$/Desktop/11/Hello.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="E:\ide\ide\mc\hud编辑器\DisplayEditor\src\main\java\cn\gionrose\parse" />
+          <option name="libDir" value="E:\ide\ide\mc\hud编辑器\DisplayEditor\src\main\java\cn\gionrose\parse" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
       </list>
     </option>
   </component>

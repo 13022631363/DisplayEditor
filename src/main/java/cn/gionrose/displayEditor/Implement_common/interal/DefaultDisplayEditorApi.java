@@ -1,0 +1,60 @@
+package cn.gionrose.displayEditor.Implement_common.interal;
+
+import cn.gionrose.displayEditor.Implement_common.configFileHelperImpl.DefaultConfigFileHelper;
+
+import cn.gionrose.displayEditor.common.configContainerManager.ConfigContainerManager;
+import cn.gionrose.displayEditor.common.configFileHelper.ConfigFileHelper;
+import cn.gionrose.displayEditor.common.functionHelper.FunctionHelper;
+import cn.gionrose.displayEditor.common.hudManager.HudManager;
+import cn.gionrose.displayEditor.common.interal.DisplayEditor;
+import cn.gionrose.displayEditor.common.interal.DisplayEditorApi;
+import cn.gionrose.displayEditor.common.logManager.LogManager;
+import cn.gionrose.displayEditor.common.papiHelper.PapiHelper;
+
+/**
+ * @Author loki
+ * @Date 2023/1/21 18:11
+ */
+public class DefaultDisplayEditorApi implements DisplayEditorApi
+{
+    private final ConfigFileHelper defaultConfigFileHelper = new DefaultConfigFileHelper();
+
+    {
+        DisplayEditor.register(this);
+    }
+    @Override
+    public LogManager getLogManager()
+    {
+        return null;
+    }
+
+    @Override
+    public ConfigFileHelper getConfigFileHelper()
+    {
+        return defaultConfigFileHelper;
+    }
+
+    @Override
+    public FunctionHelper getFunctionHelper()
+    {
+        return null;
+    }
+
+    @Override
+    public ConfigContainerManager getConfigContainerManager()
+    {
+        return null;
+    }
+
+    @Override
+    public HudManager getHudManager()
+    {
+        return null;
+    }
+
+    @Override
+    public PapiHelper getPapiHelper()
+    {
+        return null;
+    }
+}

@@ -1,11 +1,8 @@
-
-
-
 plugins {
     id("java")
 }
 
-group = "rose.loki_face2wall"
+group = "cn.gionrose.displayEditor"
 version = "1.0.0"
 
 repositories {
