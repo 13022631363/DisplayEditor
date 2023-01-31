@@ -1,4 +1,4 @@
-// Generated from java-escape by ANTLR 4.11.1
+package cn.gionrose.parse;// Generated from java-escape by ANTLR 4.11.1
 import cn.gionrose.parse.HelloListener;
 import cn.gionrose.parse.HelloVisitor;
 import org.antlr.v4.runtime.atn.*;

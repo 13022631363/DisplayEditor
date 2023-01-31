@@ -5,6 +5,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.YamlConfiguration;
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author loki
@@ -57,12 +58,19 @@ public interface ConfigFileHelper
      * @param root 指定路径下
      * @return 所有的位置文件
      */
-    List<YamlConfiguration> getConfigFiles (File root);
+    Map<String, YamlConfiguration> getConfigFiles (File root);
 
     /**
      * 获取从配置文件根目录下
      * @return 所有的配置文件
      */
-    List<YamlConfiguration>  getConfigFiles ();
+    Map<String, YamlConfiguration>  getConfigFiles ();
+
+
+    /**
+     * 移除文件名的后缀
+     * @return
+     */
+    String getRemovePostfixConfigName (String configNameAndPostfix);
 
 }

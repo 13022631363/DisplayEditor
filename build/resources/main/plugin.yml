@@ -1,5 +1,5 @@
   name: DisplayEditor
-  main: DisplayEditor
+  main: cn.gionrose.displayEditor.DisplayEditorPlugin
   version: 1.0.0
-  api-version: 1.19
+  api-version: 1.13
   author: loki_face2wall

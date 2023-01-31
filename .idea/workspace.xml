@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ceb7df1-6eb3-4751-b947-4b3d451de3ee" name="变更" comment="获取singleton和more节点配置功能  完成">
+    <list default="true" id="8ceb7df1-6eb3-4751-b947-4b3d451de3ee" name="变更" comment="普通逻辑文本解析器完成">
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
@@ -13,31 +13,21 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/DisplayEditorPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/DisplayEditorPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configContainerManagerImpl/DefaultConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configContainerManagerImpl/DefaultConfigContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfigContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configContainerManagerImpl/DefaultConfigContainerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfigContainerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configFileHelperImpl/DefaultConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultConfigFileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/Implement_common/interal/DefaultDisplayEditorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/interal/DefaultDisplayEditorApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configContainerManager/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configContainerManager/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configContainerManager/ConfigContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configContainerManager/ConfigContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configContainerManager/ConfigContainerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configContainerManager/ConfigContainerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/ConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/ConfigFileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleConfigFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleFileChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleFileChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleFileWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/configFileHelper/SimpleImageFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleImageFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/functionHelper/FunctionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/functionHelper/FunctionHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/hudManager/HudManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/hudManager/HudManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/interal/DisplayEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/interal/DisplayEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/interal/DisplayEditorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/interal/DisplayEditorApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/logManager/LogManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/logManager/LogManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/loki_face2wall/common/papiHelper/PapiHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/papiHelper/PapiHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/DisplayEditorPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/DisplayEditorPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfigContainerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfigContainerManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultConfigFileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/interal/DefaultDisplayEditorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/interal/DefaultDisplayEditorApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configContainerManager/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configContainerManager/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/ConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/ConfigFileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleConfigFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/parse/HelloParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/parse/HelloParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +52,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="DisplayEditor" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="DisplayEditor" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="DisplayEditor" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -114,7 +115,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TODO_SCOPE": "所有位置",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/ide/ide/mc/hud编辑器/DisplayEditor/src/main/java/cn/gionrose/parse",
+    "last_opened_file_path": "C:/Users/mule/Desktop/新建文件夹 (2)/purpur-1.18.2-1627.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -145,7 +146,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.test.Test">
+  <component name="RunManager" selected="JAR 应用程序.未命名">
     <configuration name="Implement_common.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Implement_common.Test" />
       <module name="DisplayEditor.main" />
@@ -155,13 +156,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="DisplayEditor.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -179,6 +173,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DisplayEditor [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="DisplayEditor [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="DisplayEditor [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="未命名" type="JarApplication" nameIsGenerated="true">
+      <option name="JAR_PATH" value="$USER_HOME$/Desktop/新建文件夹 (2)/purpur-1.18.2-1627.jar" />
+      <option name="VM_PARAMETERS" value="-Xmx4096M -Xms1024M" />
+      <option name="PROGRAM_PARAMETERS" value="--nogui" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\mule\Desktop\新建文件夹 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="DisplayEditor" />
       <method v="2">
@@ -192,11 +257,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.DisplayEditor [build]" />
+      <item itemvalue="Gradle.DisplayEditor [classes]" />
+      <item itemvalue="Gradle.DisplayEditor [clean]" />
+      <item itemvalue="JAR 应用程序.未命名" />
+      <item itemvalue="应用程序.Implement_common.Test" />
+      <item itemvalue="应用程序.test.Test" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DisplayEditor [build]" />
+        <item itemvalue="Gradle.DisplayEditor [clean]" />
+        <item itemvalue="Gradle.DisplayEditor [classes]" />
         <item itemvalue="应用程序.test.Test" />
         <item itemvalue="应用程序.Implement_common.Test" />
-        <item itemvalue="应用程序.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +296,7 @@
       <workItem from="1673338580256" duration="23731000" />
       <workItem from="1674049888232" duration="4256000" />
       <workItem from="1674109030799" duration="26722000" />
-      <workItem from="1674566036652" duration="56278000" />
+      <workItem from="1674566036652" duration="87576000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化完成">
       <created>1673335266019</created>
@@ -265,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674655367217</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="普通逻辑文本解析器完成">
+      <created>1675001864144</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675001864144</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,23 +407,38 @@
     <MESSAGE value="实现了configHelper部分接口，获取所有配置文件" />
     <MESSAGE value="实现部分细节获取配置文件信息" />
     <MESSAGE value="获取singleton和more节点配置功能  完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="获取singleton和more节点配置功能  完成" />
+    <MESSAGE value="普通逻辑文本解析器完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="普通逻辑文本解析器完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/test/Test.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/DisplayEditorPlugin.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/test/Test.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfig.java</url>
+          <line>25</line>
+          <properties class="cn.gionrose.displayEditor.Implement_common.configContainerManagerImpl.DefaultConfig" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.util.ArrayList" memberName="elementData" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

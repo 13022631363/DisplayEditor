@@ -19,86 +19,103 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
 {
-    private final List<YamlConfiguration> AllConfigFiles = DisplayEditor.getApi().getConfigFileHelper().getConfigFiles();
-    private List<Map<String,String>> singletonSettings = new ArrayList<>();
-    private final String ACTION = "action";
+    private String configName;
+    private final Map<String, YamlConfiguration> AllConfigFiles = DisplayEditor.getApi().getConfigFileHelper().getConfigFiles();
+    private final Map<String,String> allAction = new HashMap<>();
+    private final List<Map<String,String>> singletonSettings = new ArrayList<>();
+    private final String FUNCTIONS = "functions";
     private final String SETTINGS = "settings";
-
-
-    private final String MORE = "more";
 
 
     @Override
     public <T> T getNode(String configFileName, String nodeName, Class<T> clazz)
     {
-         for (YamlConfiguration config: AllConfigFiles)
-         {
+        Set<String> configNames = AllConfigFiles.keySet();
+        for (String configName : configNames)
+        {
 
-             String configName = removeYmlPostfix(config);
-             //如果文件名和容器中的文件名不匹配就接触当前此次循环
-             if (!configName.equals (configFileName))
-                 continue;
-             //获取叶子节点的内容
-             Object subNode = config.get(nodeName);
-             //如果不为空就强制类型转换
-             if (subNode != null)
+            YamlConfiguration config = AllConfigFiles.get(configName);
+            //如果文件名和容器中的文件名不匹配就接触当前此次循环
+            if (!configName.equals (configFileName))
+                continue;
+            //获取叶子节点的内容
+            Object subNode = config.get(nodeName);
+            //如果不为空就强制类型转换
+            if (subNode != null)
                 return (T)subNode;
-         }
+        }
+
          //如果获取不到或者文件名未匹配成功就返回null
         return null;
     }
-    public List<Config> buildConfig ()
+
+    @Override
+    public String getConfigName(YamlConfiguration config)
     {
-        List<Config> configs = new ArrayList<>();
+        return config.getName ();
+    }
 
-        //todo 结构还未明确
-        ConcurrentHashMap<String, List<String>> allAction
-                = new ConcurrentHashMap<>();
 
-        for (YamlConfiguration config: AllConfigFiles)
+    //构建Config
+    public void buildConfigs ()
+    {
+        Set<String> configNames = AllConfigFiles.keySet();
+        for (String configName : configNames)
         {
+            this.configName = configName;
+
             //每当读取一个config时先清除单例配置
             singletonSettings.clear ();
+            //每当读取一个config时先清除行动配置
+            allAction.clear();
 
             //获取单例列表
-            List<Map<String, String>> singleton = getSingleton(config);
+            List<Map<String, String>> singleton = getSingleton();
             //获取多例列表拆分后的单例列表
-            List<Map<String, String>> more = getMore(config);
+            List<Map<String, String>> more = getMore();
+            //获取所有action
+            Map<String, String> actions = getActions();
             //如果没有这个节点
             if (singleton != null)
                 singletonSettings.addAll (singleton);
             //如果没有这个节点
             if (more != null)
                 singletonSettings.addAll (more);
+            if (actions == null)
+                throw new RuntimeException("名字：" + configName + "的配置文件，请function");
 
+            allAction.putAll(actions);
+            System.out.println(singleton);
+            System.out.println(more);
+            System.out.println(actions);
+            //todo 这里可以输出一个日志
             //获取配置文件名字也就是命名空间
-            String configName = removeYmlPostfix(config);
-            configs.add (new DefaultConfig(configName,singletonSettings,allAction));
+
+            new DefaultConfig(configName,singletonSettings,allAction);
         }
-        return configs;
+
     }
 
-    private String removeYmlPostfix (YamlConfiguration config)
+    private Map<String, String> getActions ()
     {
-        //获取config文件的名字 xxx.yml
-        String configNameAndPostfix = config.getName();
-        //获取.的下标
-        int pointIndex = configNameAndPostfix.indexOf(".");
-        //截取开始到.的所有字符 xxx 也就是文件名
-        return configNameAndPostfix.substring(0, pointIndex);
+
+        ConfigurationSection functionsNode = getNode(configName, FUNCTIONS, ConfigurationSection.class);
+        Map<String, String> allNodeKeysValuesToMap = getAllNodeKeyValuesToMap(functionsNode, String.class);
+
+        return allNodeKeysValuesToMap;
     }
+
+
 
     /**
      * 获取more的每个数字子节点的设置
      * 并拆分成单例存入单例配置容器中
-     * @param config
      * @return
      */
-    private List<Map<String, String>> getMore (YamlConfiguration config)
+    private List<Map<String, String>> getMore ()
     {
 
-        //获取config的名字
-        String configName = config.getName();
+
         //获取more节点
         ConfigurationSection moreNode = getNode (configName, SETTINGS + ".more",ConfigurationSection.class);
 
@@ -114,10 +131,10 @@ public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
         {
             //获取数字子节点
             ConfigurationSection numberNode
-                    = getNextNode(configName, moreNode, key);
+                    = getNextNode( moreNode, key);
 
             //获取数字子节点的 {name: ["222","333","444"]}
-            Map<String, ArrayList> allNodeKeyValuesListToMap = getAllNodeKeyValuesToMap(numberNode, ArrayList.class);
+            Map<String, ArrayList> allNodeKeyValuesListToMap = getAllNodeKeyValuesToMap(numberNode,ArrayList.class);
             splitValuesResult = splitValuesList(allNodeKeyValuesListToMap);
 
         }
@@ -167,10 +184,10 @@ public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
                 //每次都止存一组
                 HashMap<String, String> keyValuesMap = new HashMap<>();
 
-                List<String> valuesList = allNodeKeyValuesListToMap.get(keys.get(o));
-
+                List valuesList = allNodeKeyValuesListToMap.get(keys.get(o));
+                String test  = valuesList.get(i).toString();
                 //将数据存放
-                keyValuesMap.put(keys.get(o), valuesList.get(i));
+                keyValuesMap.put(keys.get(o),test );
                 //添加至最终拆分结果中
                 splitValuesResult.add(keyValuesMap);
             }
@@ -179,18 +196,15 @@ public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
         return splitValuesResult;
 
     }
-    private List<Map<String,String>> getSingleton (YamlConfiguration config)
+    private List<Map<String,String>> getSingleton ()
     {
         //创建临时变量存储 的key value
         //      name: "2"
         //      size: 32
         //      permission: ""
         //      yPosition: 100
-
-        String configName = config.getName();
-
         //获取settings.singleton下的部分
-        ConfigurationSection singletonNode = getNode(config.getName()
+        ConfigurationSection singletonNode = getNode(configName
                 , SETTINGS + ".singleton"
                 , ConfigurationSection.class);
 
@@ -203,9 +217,9 @@ public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
 
            //获取子节点
             ConfigurationSection numberNode
-                    = getNextNode (configName, singletonNode,key);
+                    = getNextNode (singletonNode,key);
             //获取子节点下的String类型的value。将key和value传回
-            Map<String, String> numberNodeKeyValuesMap = getAllNodeKeyValuesToMap(numberNode, String.class);
+            Map<String, String> numberNodeKeyValuesMap = getAllNodeKeyValuesToMap(numberNode,String.class);
             //将内容添加到单设置容器中
             singletonSettings.add (numberNodeKeyValuesMap);
 
@@ -221,14 +235,14 @@ public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
      * @return
      * @param <T> 类型
      */
-    public <T> Map<String, T>  getAllNodeKeyValuesToMap (ConfigurationSection section,Class<T> clazz)
+    private <T> Map<String, T>  getAllNodeKeyValuesToMap (ConfigurationSection section,Class<T> clazz)
     {
         Map<String,T> nodeKeyValues = new HashMap();
         Set<String> keys = section.getKeys(true);
         for (String key: keys)
         {
-            String nextPath = section.getCurrentPath() + "." + key;
-            Object o = section.get(nextPath);
+
+            Object o = section.get(key);
 
             if (o instanceof ConfigurationSection)
                 continue;
@@ -245,7 +259,7 @@ public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
      * @param subNodeName
      * @return
      */
-    private ConfigurationSection getNextNode (String configName,ConfigurationSection node,String subNodeName)
+    private ConfigurationSection getNextNode (ConfigurationSection node,String subNodeName)
     {
         //获取此节点的当前地址
         String currentPath = node.getCurrentPath();

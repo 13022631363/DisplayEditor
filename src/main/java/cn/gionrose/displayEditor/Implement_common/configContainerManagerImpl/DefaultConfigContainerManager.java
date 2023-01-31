@@ -4,6 +4,7 @@ import cn.gionrose.displayEditor.common.configContainerManager.Config;
 import cn.gionrose.displayEditor.common.configContainerManager.ConfigContainer;
 import cn.gionrose.displayEditor.common.configContainerManager.ConfigContainerManager;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,7 +13,7 @@ import java.util.List;
  */
 public class DefaultConfigContainerManager implements ConfigContainerManager
 {
-    private List<ConfigContainer> allConfigContainer;
+    private List<ConfigContainer> allConfigContainer = new ArrayList<>();
     @Override
     public List<ConfigContainer> getAll()
     {
@@ -35,7 +36,7 @@ public class DefaultConfigContainerManager implements ConfigContainerManager
     @Override
     public ConfigContainer createContainer(Config config)
     {
-        return config.getConfigContainer();
+        return new DefaultConfigContainer(config);
 
     }
 

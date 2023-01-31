@@ -1,5 +1,6 @@
 package cn.gionrose.displayEditor.Implement_common.interal;
 
+import cn.gionrose.displayEditor.Implement_common.configContainerManagerImpl.DefaultConfigContainerManager;
 import cn.gionrose.displayEditor.Implement_common.configFileHelperImpl.DefaultConfigFileHelper;
 
 import cn.gionrose.displayEditor.common.configContainerManager.ConfigContainerManager;
@@ -18,6 +19,7 @@ import cn.gionrose.displayEditor.common.papiHelper.PapiHelper;
 public class DefaultDisplayEditorApi implements DisplayEditorApi
 {
     private final ConfigFileHelper defaultConfigFileHelper = new DefaultConfigFileHelper();
+    private final ConfigContainerManager defaultConfigContainerManager = new DefaultConfigContainerManager();
 
     {
         DisplayEditor.register(this);
@@ -43,7 +45,7 @@ public class DefaultDisplayEditorApi implements DisplayEditorApi
     @Override
     public ConfigContainerManager getConfigContainerManager()
     {
-        return null;
+        return defaultConfigContainerManager;
     }
 
     @Override

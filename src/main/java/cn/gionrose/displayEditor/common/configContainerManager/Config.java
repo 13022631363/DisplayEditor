@@ -33,7 +33,7 @@ public interface Config
      * 获取函数行为
      * @return
      */
-    ConcurrentHashMap<String, List<String>> getAction ();
+    Map<String, String> getAction ();
 
     /**
      * 获取配置的容器

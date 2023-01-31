@@ -2,6 +2,7 @@ package cn.gionrose.displayEditor.Implement_common.configContainerManagerImpl;
 
 import cn.gionrose.displayEditor.common.configContainerManager.Config;
 import cn.gionrose.displayEditor.common.configContainerManager.ConfigContainer;
+import cn.gionrose.displayEditor.common.interal.DisplayEditor;
 
 import java.util.List;
 import java.util.Map;
@@ -15,12 +16,17 @@ public class DefaultConfig implements Config
 {
     private String namespace;
     private List<Map<String, String>> settings;
-    private ConcurrentHashMap<String, List<String>> allAction;
+    private Map<String, String> allAction;
+
+    private ConfigContainer container = DisplayEditor.getApi().getConfigContainerManager().register
+            (DisplayEditor.getApi().getConfigContainerManager().createContainer(this));
+
 
 
     public DefaultConfig (String namespace, List<Map<String, String>> settings,
-                          ConcurrentHashMap<String, List<String>> allAction)
+                          Map<String, String> allAction)
     {
+
         this.namespace = namespace;
         this.settings = settings;
         this.allAction = allAction;
@@ -44,7 +50,7 @@ public class DefaultConfig implements Config
     }
 
     @Override
-    public ConcurrentHashMap<String, List<String>> getAction()
+    public Map<String, String> getAction()
     {
         return allAction;
     }
@@ -52,6 +58,17 @@ public class DefaultConfig implements Config
     @Override
     public ConfigContainer getConfigContainer()
     {
-        return new DefaultConfigContainer(this);
+        return container;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "DefaultConfig{" +
+                "namespace='" + namespace + '\'' +
+                ", settings=" + settings +
+                ", allAction=" + allAction +
+                ", container=" + container +
+                '}';
     }
 }
