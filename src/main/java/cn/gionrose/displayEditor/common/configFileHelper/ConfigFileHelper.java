@@ -51,26 +51,28 @@ public interface ConfigFileHelper
      * @param fileName 文件名
      * @return 配置文件文件
      */
-    YamlConfiguration getConfigFile (String fileName);
+    File getFile (String fileName);
 
     /**
      * 获取多个配置文件
+     * @param postFix 指定后缀的文件
      * @param root 指定路径下
      * @return 所有的位置文件
      */
-    Map<String, YamlConfiguration> getConfigFiles (File root);
+    Map<String, File> getFiles (File root, String postFix);
 
     /**
      * 获取从配置文件根目录下
+     * @param postFix 指定后缀的文件
      * @return 所有的配置文件
      */
-    Map<String, YamlConfiguration>  getConfigFiles ();
+    Map<String, File>  getFiles (String postFix);
 
 
     /**
      * 移除文件名的后缀
      * @return
      */
-    String getRemovePostfixConfigName (String configNameAndPostfix);
+    String getRemovePostfixName (String configNameAndPostfix);
 
 }

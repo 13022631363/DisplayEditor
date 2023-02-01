@@ -17,6 +17,5 @@ public interface SimpleConfigFileReader
      * @param <T> 返回的值的类型
      */
     <T> T getNode (String configFileName, String nodeName,Class<T> clazz);
-    String getConfigName (YamlConfiguration config);
 
 }

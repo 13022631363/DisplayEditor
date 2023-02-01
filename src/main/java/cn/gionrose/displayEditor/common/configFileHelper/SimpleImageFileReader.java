@@ -6,4 +6,5 @@ package cn.gionrose.displayEditor.common.configFileHelper;
  */
 public interface SimpleImageFileReader
 {
+
 }

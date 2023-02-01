@@ -9,6 +9,7 @@ import cn.gionrose.displayEditor.common.interal.DisplayEditor;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 
+import java.io.File;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -20,21 +21,37 @@ import java.util.concurrent.ConcurrentHashMap;
 public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
 {
     private String configName;
-    private final Map<String, YamlConfiguration> AllConfigFiles = DisplayEditor.getApi().getConfigFileHelper().getConfigFiles();
+    private Map<String, YamlConfiguration> allConfigFiles ;
     private final Map<String,String> allAction = new HashMap<>();
     private final List<Map<String,String>> singletonSettings = new ArrayList<>();
     private final String FUNCTIONS = "functions";
     private final String SETTINGS = "settings";
 
+    {
+        Map<String, File> configFiles = DisplayEditor.getApi().getConfigFileHelper().getFiles(".yml");
+        allConfigFiles = parseToYamlConfiguration(configFiles);
+    }
+    private Map<String, YamlConfiguration> parseToYamlConfiguration (Map<String, File> configFiles)
+    {
+        Map<String, YamlConfiguration> allConfigFiles = new HashMap<>();
+        Set<String> configFileNames = configFiles.keySet();
+
+        for (String configName: configFileNames)
+        {
+            YamlConfiguration configFile = YamlConfiguration.loadConfiguration(configFiles.get(configName));
+            allConfigFiles.put (configName, configFile);
+        }
+        return allConfigFiles;
+    }
 
     @Override
     public <T> T getNode(String configFileName, String nodeName, Class<T> clazz)
     {
-        Set<String> configNames = AllConfigFiles.keySet();
+        Set<String> configNames = allConfigFiles.keySet();
         for (String configName : configNames)
         {
 
-            YamlConfiguration config = AllConfigFiles.get(configName);
+            YamlConfiguration config = allConfigFiles.get(configName);
             //如果文件名和容器中的文件名不匹配就接触当前此次循环
             if (!configName.equals (configFileName))
                 continue;
@@ -49,17 +66,13 @@ public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
         return null;
     }
 
-    @Override
-    public String getConfigName(YamlConfiguration config)
-    {
-        return config.getName ();
-    }
+
 
 
     //构建Config
     public void buildConfigs ()
     {
-        Set<String> configNames = AllConfigFiles.keySet();
+        Set<String> configNames = allConfigFiles.keySet();
         for (String configName : configNames)
         {
             this.configName = configName;
@@ -270,4 +283,18 @@ public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
 
     }
 
+    public Map<String, YamlConfiguration> getAllConfigFiles()
+    {
+        return allConfigFiles;
+    }
+
+    public Map<String, String> getAllAction()
+    {
+        return allAction;
+    }
+
+    public List<Map<String, String>> getSingletonSettings()
+    {
+        return singletonSettings;
+    }
 }

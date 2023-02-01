@@ -29,7 +29,7 @@ public class DefaultConfigFileHelper implements ConfigFileHelper
     @Override
     public SimpleImageFileReader getImageFileReader()
     {
-        return null;
+        return new DefaultSimpleImageFileReader();
     }
 
     @Override
@@ -57,16 +57,16 @@ public class DefaultConfigFileHelper implements ConfigFileHelper
     }
 
     @Override
-    public YamlConfiguration getConfigFile(String fileName)
+    public File getFile(String fileName)
     {
-        return YamlConfiguration.loadConfiguration(new File (baseConfigFolder,fileName));
+        return new File (baseConfigFolder,fileName);
     }
 
     @Override
-    public Map<String, YamlConfiguration> getConfigFiles(File root)
+    public Map<String, File> getFiles(File root, String postFix)
     {
         //创建临时容器
-        Map<String, YamlConfiguration> configFileMap = new HashMap<>();
+        Map<String, File> fileMap = new HashMap<>();
         //判断提供的路径文件是否是文件夹类型
         if (!root.isDirectory())
         {
@@ -74,43 +74,43 @@ public class DefaultConfigFileHelper implements ConfigFileHelper
             return null;
         }
         //如果是文件夹就获取它包下所有的文件
-        File[] configFileArray = root.listFiles();
+        File[] fileArray = root.listFiles();
         //遍历
-        for (File aConfigFile : configFileArray)
+        for (File file : fileArray)
         {
-            String configNameAndPostfix = aConfigFile.getName();
+            String nameAndPostfix = file.getName();
             //递归将所有yml文件返回
-            Map<String, YamlConfiguration> returnConfigFileMap =
-                    getConfigFiles(new File(root, aConfigFile.getName ()));
+            Map<String, File> returnFileMap =
+                    getFiles(new File(root, file.getName ()),postFix);
             //如果返回不为空
             //代表是文件夹或者存在yml文件
-            if (returnConfigFileMap != null)
+            if (returnFileMap != null)
             {
                 //就合并
-                configFileMap.putAll (returnConfigFileMap);
+                fileMap.putAll (returnFileMap);
             }
 
             //这个是文件并且是yml文件
-            if (configNameAndPostfix.contains (".yml")) //就存入临时容器中
-                configFileMap.put (getRemovePostfixConfigName(configNameAndPostfix), YamlConfiguration.loadConfiguration(aConfigFile));
+            if (nameAndPostfix.contains (postFix)) //就存入临时容器中
+                fileMap.put (getRemovePostfixName(nameAndPostfix), file);
         }
 
-        return configFileMap;
+        return fileMap;
     }
 
     @Override
-    public Map<String, YamlConfiguration> getConfigFiles()
+    public Map<String, File> getFiles(String postFix)
     {
-        return getConfigFiles(baseConfigFolder);
+        return getFiles(baseConfigFolder, postFix);
     }
 
     @Override
-    public String getRemovePostfixConfigName(String configNameAndPostfix)
+    public String getRemovePostfixName(String nameAndPostfix)
     {
 
         //获取.的下标
-        int pointIndex = configNameAndPostfix.indexOf(".");
+        int pointIndex = nameAndPostfix.indexOf(".");
         //截取开始到.的所有字符 xxx 也就是文件名
-        return configNameAndPostfix.substring(0, pointIndex);
+        return nameAndPostfix.substring(0, pointIndex);
     }
 }
