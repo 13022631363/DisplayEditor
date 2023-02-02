@@ -3,15 +3,14 @@ package cn.gionrose.displayEditor.Implement_common.configFileHelperImpl;
 
 
 import cn.gionrose.displayEditor.Implement_common.configContainerManagerImpl.DefaultConfig;
-import cn.gionrose.displayEditor.common.configContainerManager.Config;
-import cn.gionrose.displayEditor.common.configFileHelper.SimpleConfigFileReader;
+import cn.gionrose.displayEditor.common.fileHelper.SimpleConfigFileReader;
 import cn.gionrose.displayEditor.common.interal.DisplayEditor;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.File;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
+
 
 
 /**
@@ -21,15 +20,20 @@ import java.util.concurrent.ConcurrentHashMap;
 public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
 {
     private String configName;
-    private Map<String, YamlConfiguration> allConfigFiles ;
+    private final Map<String, YamlConfiguration> allConfigFiles ;
     private final Map<String,String> allAction = new HashMap<>();
     private final List<Map<String,String>> singletonSettings = new ArrayList<>();
     private final String FUNCTIONS = "functions";
     private final String SETTINGS = "settings";
 
+
     {
-        Map<String, File> configFiles = DisplayEditor.getApi().getConfigFileHelper().getFiles(".yml");
-        allConfigFiles = parseToYamlConfiguration(configFiles);
+        Map<String, File> configFilesFileType = getAllConfigFilesFileType();
+        allConfigFiles = parseToYamlConfiguration(configFilesFileType);
+    }
+    public Map<String, File> getAllConfigFilesFileType ()
+    {
+        return DisplayEditor.getApi().getFileHelper().getFiles(".yml");
     }
     private Map<String, YamlConfiguration> parseToYamlConfiguration (Map<String, File> configFiles)
     {
@@ -115,7 +119,7 @@ public class DefaultSimpleConfigFileReader implements SimpleConfigFileReader
         ConfigurationSection functionsNode = getNode(configName, FUNCTIONS, ConfigurationSection.class);
         Map<String, String> allNodeKeysValuesToMap = getAllNodeKeyValuesToMap(functionsNode, String.class);
 
-        return allNodeKeysValuesToMap;
+        return allNodeKeysValuesToMap.isEmpty() ? null : allNodeKeysValuesToMap;
     }
 
 

@@ -1,7 +1,7 @@
 package cn.gionrose.displayEditor.common.interal;
 
 import cn.gionrose.displayEditor.common.configContainerManager.ConfigContainerManager;
-import cn.gionrose.displayEditor.common.configFileHelper.ConfigFileHelper;
+import cn.gionrose.displayEditor.common.fileHelper.FileHelper;
 import cn.gionrose.displayEditor.common.functionHelper.FunctionHelper;
 import cn.gionrose.displayEditor.common.hudManager.HudManager;
 import cn.gionrose.displayEditor.common.logManager.LogManager;
@@ -25,7 +25,7 @@ public interface DisplayEditorApi
      * 校验文件信息
      *
      */
-    ConfigFileHelper getConfigFileHelper ();
+    FileHelper getFileHelper ();
 
     /**
      * 1.解析配置文件的逻辑

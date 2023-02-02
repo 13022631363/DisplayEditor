@@ -1,4 +1,4 @@
-package cn.gionrose.displayEditor.common.configFileHelper;
+package cn.gionrose.displayEditor.common.fileHelper;
 
 /**
  * @Author loki

@@ -2,34 +2,38 @@ package cn.gionrose.displayEditor.Implement_common.configFileHelperImpl;
 
 
 import cn.gionrose.displayEditor.DisplayEditorPlugin;
-import cn.gionrose.displayEditor.common.configFileHelper.*;
+import cn.gionrose.displayEditor.common.fileHelper.*;
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.YamlConfiguration;
-import org.yaml.snakeyaml.Yaml;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
  * @Author loki
  * @Date 2023/1/20 22:12
  */
-public class DefaultConfigFileHelper implements ConfigFileHelper
+public class DefaultConfigFileHelper implements FileHelper
 {
-    private final File baseConfigFolder = new File (DisplayEditorPlugin.getINSTANCE().getDataFolder() ,"Customized");;
+    private final File baseConfigFolder = new File (DisplayEditorPlugin.getINSTANCE().getDataFolder() ,"Customized");
+    private SimpleConfigFileReader defaultSimpleConfigFileReader;
+
+    private SimpleImageFileReader defaultSimpleImageFileReader;
     @Override
     public SimpleConfigFileReader getConfigFileReader()
     {
-        return new DefaultSimpleConfigFileReader();
+        if (defaultSimpleConfigFileReader == null)
+            defaultSimpleConfigFileReader = new DefaultSimpleConfigFileReader();
+
+        return defaultSimpleConfigFileReader;
     }
 
     @Override
     public SimpleImageFileReader getImageFileReader()
     {
-        return new DefaultSimpleImageFileReader();
+        if (defaultSimpleImageFileReader == null)
+            defaultSimpleImageFileReader = new DefaultSimpleImageFileReader();
+        return defaultSimpleImageFileReader;
     }
 
     @Override
@@ -61,6 +65,7 @@ public class DefaultConfigFileHelper implements ConfigFileHelper
     {
         return new File (baseConfigFolder,fileName);
     }
+
 
     @Override
     public Map<String, File> getFiles(File root, String postFix)

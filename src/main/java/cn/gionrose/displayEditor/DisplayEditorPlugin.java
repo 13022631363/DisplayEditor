@@ -4,13 +4,8 @@ package cn.gionrose.displayEditor;
 import cn.gionrose.displayEditor.Implement_common.configFileHelperImpl.DefaultSimpleConfigFileReader;
 import cn.gionrose.displayEditor.Implement_common.configFileHelperImpl.DefaultSimpleImageFileReader;
 import cn.gionrose.displayEditor.Implement_common.interal.DefaultDisplayEditorApi;
-import cn.gionrose.displayEditor.common.configContainerManager.Config;
 import cn.gionrose.displayEditor.common.configContainerManager.ConfigContainer;
-import cn.gionrose.displayEditor.common.configFileHelper.SimpleConfigFileReader;
-import cn.gionrose.displayEditor.common.configFileHelper.SimpleImageFileReader;
-import cn.gionrose.displayEditor.common.interal.DisplayEditor;
 import cn.gionrose.displayEditor.common.interal.DisplayEditorApi;
-import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -33,7 +28,7 @@ public class DisplayEditorPlugin extends JavaPlugin
         INSTANCE = this;
         DisplayEditorApi defaultDisplayEditorApi = new DefaultDisplayEditorApi();
 
-        DefaultSimpleConfigFileReader configFileReader = (DefaultSimpleConfigFileReader) defaultDisplayEditorApi.getConfigFileHelper().getConfigFileReader();
+        DefaultSimpleConfigFileReader configFileReader = (DefaultSimpleConfigFileReader) defaultDisplayEditorApi.getFileHelper().getConfigFileReader();
         configFileReader.buildConfigs();
 
         List<ConfigContainer> all = defaultDisplayEditorApi.getConfigContainerManager().getAll();
@@ -41,7 +36,7 @@ public class DisplayEditorPlugin extends JavaPlugin
         {
             System.out.println(configContainer.getConfig());
         }
-        DefaultSimpleImageFileReader imageFileReader = (DefaultSimpleImageFileReader) defaultDisplayEditorApi.getConfigFileHelper().getImageFileReader();
+        DefaultSimpleImageFileReader imageFileReader = (DefaultSimpleImageFileReader) defaultDisplayEditorApi.getFileHelper().getImageFileReader();
         Map<String, Map<String, File>> allImageFiles = imageFileReader.getAllImageFiles();
         Set<String> imageDirNames = allImageFiles.keySet();
         for (String imageDirName: imageDirNames)

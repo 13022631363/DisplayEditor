@@ -1,7 +1,5 @@
-package cn.gionrose.displayEditor.common.configFileHelper;
+package cn.gionrose.displayEditor.common.fileHelper;
 
-
-import org.bukkit.configuration.file.YamlConfiguration;
 
 /**
  * @Author loki

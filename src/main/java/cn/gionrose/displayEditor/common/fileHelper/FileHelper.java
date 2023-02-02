@@ -1,17 +1,16 @@
-package cn.gionrose.displayEditor.common.configFileHelper;
+package cn.gionrose.displayEditor.common.fileHelper;
 
 
 import org.bukkit.command.CommandSender;
-import org.bukkit.configuration.file.YamlConfiguration;
+
 import java.io.File;
-import java.util.List;
 import java.util.Map;
 
 /**
  * @Author loki
  * @Date  2023/1/13 14:32
  */
-public interface ConfigFileHelper
+public interface FileHelper
 {
     /**
      * 配置文件读取器
@@ -60,7 +59,12 @@ public interface ConfigFileHelper
      * @return 所有的位置文件
      */
     Map<String, File> getFiles (File root, String postFix);
+    /*
 
+      这里的getFiles和上面的其实并不应该在这个类的功能中
+      后期修改成定义一个fileReader接口
+      然后configFileReader和imageFileReader来继承并实现这几个方法
+     */
     /**
      * 获取从配置文件根目录下
      * @param postFix 指定后缀的文件

@@ -4,15 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ceb7df1-6eb3-4751-b947-4b3d451de3ee" name="变更" comment="配置文件读取测试完毕">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleImageFileReader.java" afterDir="false" />
+    <list default="true" id="8ceb7df1-6eb3-4751-b947-4b3d451de3ee" name="变更" comment="图片文件读取编写完成，还需测试">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/DisplayEditorPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/DisplayEditorPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultConfigFileHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/ConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/ConfigFileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleConfigFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleImageFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleImageFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleImageFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleImageFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/interal/DefaultDisplayEditorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/interal/DefaultDisplayEditorApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/ConfigFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/fileHelper/FileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/fileHelper/SimpleConfigFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleFileChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/fileHelper/SimpleFileChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleFileWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/fileHelper/SimpleFileWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/configFileHelper/SimpleImageFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/fileHelper/SimpleImageFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/interal/DisplayEditorApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/common/interal/DisplayEditorApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,7 +295,7 @@
       <workItem from="1674049888232" duration="4256000" />
       <workItem from="1674109030799" duration="26722000" />
       <workItem from="1674566036652" duration="89019000" />
-      <workItem from="1675258754787" duration="5013000" />
+      <workItem from="1675258754787" duration="8987000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化完成">
       <created>1673335266019</created>
@@ -339,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675179220928</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="图片文件读取编写完成，还需测试">
+      <created>1675263870941</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675263870941</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,24 +422,20 @@
     <MESSAGE value="获取singleton和more节点配置功能  完成" />
     <MESSAGE value="普通逻辑文本解析器完成" />
     <MESSAGE value="配置文件读取测试完毕" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置文件读取测试完毕" />
+    <MESSAGE value="图片文件读取编写完成，还需测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="图片文件读取编写完成，还需测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleConfigFileReader.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configContainerManagerImpl/DefaultConfig.java</url>
-          <line>25</line>
-          <properties class="cn.gionrose.displayEditor.Implement_common.configContainerManagerImpl.DefaultConfig" method="&lt;init&gt;">
+          <url>file://$PROJECT_DIR$/src/main/java/cn/gionrose/displayEditor/Implement_common/configFileHelperImpl/DefaultSimpleImageFileReader.java</url>
+          <line>26</line>
+          <properties class="cn.gionrose.displayEditor.Implement_common.configFileHelperImpl.DefaultSimpleImageFileReader" method="init">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="37" />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
