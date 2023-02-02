@@ -6,5 +6,8 @@ package cn.gionrose.displayEditor.common.logManager;
  */
 public interface LogManager
 {
-
+    /**
+     * @return 获取快捷校验文件日志
+     */
+    SimpleCheckFileLog getSimpleCheckFileLog ();
 }

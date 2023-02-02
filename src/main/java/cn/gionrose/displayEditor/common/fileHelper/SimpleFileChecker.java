@@ -6,4 +6,5 @@ package cn.gionrose.displayEditor.common.fileHelper;
  */
 public interface SimpleFileChecker
 {
+    void check ();
 }
